@@ -13,7 +13,7 @@ print(BASE_DIR)
 DATA_BASE={
     'engine':'file_storage',
     'name':'accounts',
-    'path':"%sdb"%BASE_DIR
+    'path':"%s/db"%BASE_DIR
 }
 
 LOG_LEVEL=logging.INFO
