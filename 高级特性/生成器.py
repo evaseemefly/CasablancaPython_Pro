@@ -9,6 +9,10 @@ def fib(max):
 
 f=fib(6)
 
+g=(x*x for x in range(1,20))
+for n in g:
+    print(n)
+
 for n in f:
     print(n)
 
