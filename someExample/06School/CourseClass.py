@@ -12,5 +12,13 @@ class Course:
         self.name=name
         self.period=period
         self.price=price
-
         self.teachers=[]
+
+    def __str__(self):
+        return ('''
+                ——CourseInfo——
+                Name:%s
+                Period:%s
+                Price:%s
+                
+                ''' % (self.name, self.period, self.price))

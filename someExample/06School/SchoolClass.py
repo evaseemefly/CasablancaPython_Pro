@@ -8,6 +8,15 @@ class School:
         self.course=[]
         self.grade=[]
 
+    def __str__(self):
+        return ('''
+        ——SchoolInfo——
+        Name:%s
+        Address:%s
+        City:%s
+        Course:%s
+        Grade:%s
+        '''%(self.name,self.address,self.city,self.course,self.grade))
     def AddCourse(self,course):
         """
         添加课程

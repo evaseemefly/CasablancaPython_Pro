@@ -11,4 +11,5 @@ class Teacher(Person):
     def GetStudentList(self):
         pass
 
-    def AddGrades
+    def AddGrades(self):
+        pass

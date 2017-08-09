@@ -2,7 +2,7 @@ from CourseClass import Course
 from TeacherClass import Teacher
 import time
 
-class Grade:
+class Grade(object):
     def __init__(self,name):
         """
         通过学校创建班级， 班级关联课程、讲师
@@ -10,7 +10,8 @@ class Grade:
         """
         self.name=name
         self.date = time.time() #开课时间
-        self.course=[] #课程
+        self.course=[] #课程集合
+        self.students=[] #学生集合
         self.teacher
 
     def addCourse(self,course):
@@ -33,5 +34,13 @@ class Grade:
         """
         if self.teacher==teacher:
             return False
-        els:
+        else:
             self.teacher=teacher
+
+    def GetStudentList(self):
+        '''
+        返回当前班级中的学生列表
+        :param self:
+        :return:
+        '''
+        return self.students
